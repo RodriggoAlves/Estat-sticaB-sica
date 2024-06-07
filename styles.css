@@ -2,70 +2,92 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-body, html {
-    height: 100%;
-    font-family: Arial, sans-serif;
+  }
+  
+  body,
+  html {
+    height: 100vh;
+    font-family: Poppins, sans-serif;
     color: white;
-}
-
-.container {
+    background-color: black;
+  }
+  
+  .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    text-align: center;
-}
-
-.section {
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .section {
     margin: 20px 0;
-}
-
-input {
+    width: 100%;
+    max-width: 400px; /* Adjust as needed */
+  }
+  
+  input {
     padding: 10px;
-    margin: 5px;
-    width: calc(100% - 24px);
-    max-width: 300px;
+    margin: 5px 0;
+    width: 100%; /* Remove max-width */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border: 2px solid #a600ff;
-    border-radius: 30px;
-    color: #e600ff;
+    border: 3px solid #e600ff;
+    border-radius: 80px;
+    color: white;
     background-color: black;
-}
-
-button {
+  }
+  
+  button {
     padding: 10px 20px;
     margin-top: 10px;
     background-color: #a600ff;
     color: #fff;
     border: none;
-    border-radius: 30px;
+    border-radius: 4px;
     cursor: pointer;
-}
-input:hover {
-    border-color: #a600ff;
-    background-color: black;
-}
-
-
-
-
-button:hover {
+    width: 100%; /* Remove max-width */
+    align-self: center; /* Center horizontally */
+  }
+  
+  button:hover {
     background-color: #e600ff;
-}
-
-p {
+  }
+  
+  p {
     margin-top: 10px;
-    border-color: #a600ff;
-}
-
-@media (max-width: 600px) {
-    input {
-        width: 90%;
+  }
+  
+  /* Media queries for additional responsiveness (same as before) */
+  @media (max-width: 768px) {
+    /* Adjust styles for larger smartphones */
+    .container {
+      padding: 15px;
     }
-}
-body{
-    background-color: black;
-}
+  
+    .section {
+      max-width: 350px;
+    }
+  
+    input,
+    button {
+      font-size: 16px; /* Adjust font size for better readability */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Adjust styles for smaller smartphones */
+    .container {
+      padding: 10px;
+    }
+  
+    .section {
+      max-width: 300px;
+    }
+  
+    input,
+    button {
+      font-size: 14px; /* Further adjust font size */
+    }
+  }
+  
