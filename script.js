@@ -43,3 +43,8 @@ function calculateLCM() {
     const lcm = Math.abs(num1 * num2) / gcd(num1, num2);
     document.getElementById('lcmResult').textContent = `O MMC de ${num1} e ${num2} é ${lcm}.`;
 }
+
+function rollDie(sides) {
+    const result = Math.floor(Math.random() * sides) + 1;
+    document.getElementById('diceResult').textContent = `O resultado do dado de ${sides} lados é ${result}.`;
+}
