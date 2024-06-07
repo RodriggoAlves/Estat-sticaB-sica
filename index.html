@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Números</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Verificador de Números</h1>
+
+        <div class="section">
+            <h2>Ímpar ou Par</h2>
+            <input type="number" id="oddEvenInput" placeholder="Digite um número">
+            <button onclick="checkOddEven()">Verificar</button>
+            <p id="oddEvenResult"></p>
+        </div>
+
+        <div class="section">
+            <h2>Número Primo</h2>
+            <input type="number" id="primeInput" placeholder="Digite um número">
+            <button onclick="checkPrime()">Verificar</button>
+            <p id="primeResult"></p>
+        </div>
+
+        <div class="section">
+            <h2>Máximo Divisor Comum (MDC)</h2>
+            <input type="number" id="gcdInput1" placeholder="Digite o primeiro número">
+            <input type="number" id="gcdInput2" placeholder="Digite o segundo número">
+            <button onclick="calculateGCD()">Calcular</button>
+            <p id="gcdResult"></p>
+        </div>
+
+        <div class="section">
+            <h2>Mínimo Múltiplo Comum (MMC)</h2>
+            <input type="number" id="lcmInput1" placeholder="Digite o primeiro número">
+            <input type="number" id="lcmInput2" placeholder="Digite o segundo número">
+            <button onclick="calculateLCM()">Calcular</button>
+            <p id="lcmResult"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
