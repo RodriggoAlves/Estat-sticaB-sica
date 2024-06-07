@@ -3,24 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verificador de Números</title>
+    <title>Verificador de Números e Dados</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Verificador de Números</h1>
+        <h1>Verificador de Números e Dados</h1>
 
         <div class="section">
             <h2>Ímpar ou Par</h2>
             <input type="number" id="oddEvenInput" placeholder="Digite um número">
-            <button onclick="checkOddEven()">Verificar</button>
+            <div class="button-container">
+                <button onclick="checkOddEven()">Verificar</button>
+            </div>
             <p id="oddEvenResult"></p>
         </div>
 
         <div class="section">
             <h2>Número Primo</h2>
             <input type="number" id="primeInput" placeholder="Digite um número">
-            <button onclick="checkPrime()">Verificar</button>
+            <div class="button-container">
+                <button onclick="checkPrime()">Verificar</button>
+            </div>
             <p id="primeResult"></p>
         </div>
 
@@ -28,7 +32,9 @@
             <h2>Máximo Divisor Comum (MDC)</h2>
             <input type="number" id="gcdInput1" placeholder="Digite o primeiro número">
             <input type="number" id="gcdInput2" placeholder="Digite o segundo número">
-            <button onclick="calculateGCD()">Calcular</button>
+            <div class="button-container">
+                <button onclick="calculateGCD()">Calcular</button>
+            </div>
             <p id="gcdResult"></p>
         </div>
 
@@ -36,8 +42,39 @@
             <h2>Mínimo Múltiplo Comum (MMC)</h2>
             <input type="number" id="lcmInput1" placeholder="Digite o primeiro número">
             <input type="number" id="lcmInput2" placeholder="Digite o segundo número">
-            <button onclick="calculateLCM()">Calcular</button>
+            <div class="button-container">
+                <button onclick="calculateLCM()">Calcular</button>
+            </div>
             <p id="lcmResult"></p>
+        </div>
+
+        <div class="section">
+            <h2>Dados</h2>
+            <div class="button-container">
+                <button onclick="rollDie(2)">Dado de 2 Lados</button>
+            </div>
+            <div class="button-container">
+                <button onclick="rollDie(4)">Dado de 4 Lados</button>
+            </div>
+            <div class="button-container">
+                <button onclick="rollDie(6)">Dado de 6 Lados</button>
+            </div>
+            <div class="button-container">
+                <button onclick="rollDie(8)">Dado de 8 Lados</button>
+            </div>
+            <div class="button-container">
+                <button onclick="rollDie(10)">Dado de 10 Lados</button>
+            </div>
+            <div class="button-container">
+                <button onclick="rollDie(14)">Dado de 14 Lados</button>
+            </div>
+            <div class="button-container">
+                <button onclick="rollDie(20)">Dado de 20 Lados</button>
+            </div>
+            <div class="button-container">
+                <button onclick="rollDie(30)">Dado de 30 Lados</button>
+            </div>
+            <p id="diceResult"></p>
         </div>
     </div>
 
