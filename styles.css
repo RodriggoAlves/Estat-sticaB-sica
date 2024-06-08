@@ -5,11 +5,10 @@
 }
 
 body, html {
-    height: 100vh;
+    height: 100%;
     font-family: Poppins, sans-serif;
     color: white;
     background-color: black;
-    font-family: poppins;
 }
 
 .container {
@@ -25,6 +24,7 @@ body, html {
     margin: 20px 0;
     width: 100%;
     max-width: 400px;
+    text-align: center;
 }
 
 input {
@@ -47,7 +47,6 @@ button {
     border-radius: 30px;
     cursor: pointer;
     width: 100%;
-    align-self: center;
 }
 
 button:hover {
@@ -62,6 +61,42 @@ p {
 .button-container {
     display: flex;
     justify-content: center;
+}
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%; 
+    height: 100vh; 
+    flex-direction: column; 
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #e600ff;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+.loading-message {
+    color: #a600ff; 
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    margin-top: 20px; 
+}
+
+.loading-message.visible {
+    opacity: 1; 
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 @media (max-width: 768px) {
